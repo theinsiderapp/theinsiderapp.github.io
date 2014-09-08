@@ -1,0 +1,106 @@
+.overlay {
+    background-color: #32383e;
+    height: 100%;
+    opacity: 0.4;
+    position: absolute;
+    width: 100%;
+}
+
+#showcase {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+#home #showcase {
+    background-image: url("../images/mountain-conversation.jpg");
+    background-position: 20% center;
+}
+#home #showcase .wrap {
+    padding-bottom: 200px;
+    padding-top: 200px;
+}
+#home #showcase .message {
+    display: inline-block;
+    margin-bottom: 0;
+    position: relative;
+    vertical-align: middle;
+    width: 32.8%;
+}
+@media screen and (max-width: 650px) {
+    #home #showcase .message {
+        width: 98.4%;
+    }
+}
+@media screen and (max-width: 650px) {
+    #home #showcase .message {
+        width: 98.4%;
+    }
+}
+#home #showcase .image {
+    display: inline-block;
+    position: relative;
+    text-align: right;
+    vertical-align: middle;
+    width: 65.6%;
+}
+@media screen and (max-width: 650px) {
+    #home #showcase .image {
+        width: 98.4%;
+    }
+}
+@media screen and (max-width: 650px) {
+    #home #showcase .image {
+        width: 98.4%;
+    }
+}
+#home #showcase p:last-child {
+    margin-top: 36px;
+}
+#home #showcase a {
+    font-size: 18px;
+}
+@media screen and (max-width: 850px) {
+    #home #showcase .message {
+        padding-top: 100px;
+        text-align: center;
+        width: 100%;
+    }
+    #home #showcase .image {
+        margin-left: 16.4%;
+    }
+}
+@media screen and (max-width: 650px) {
+    #home #showcase {
+
+    }
+    #home #showcase .image {
+        margin-left: 0;
+        text-align: center;
+    }
+    #home #showcase .image [class*="step-"], #home #showcase .image .image-placeholder {
+        text-align: center;
+        width: 100%;
+    }
+    #home #showcase .image img {
+        display: inline;
+        width: 90%;
+    }
+}
+
+
+.dark h1, .dark h2, .dark h4 {
+    color: #fff;
+}
+.dark p {
+    color: #9cafbe;
+}
+.dark p a {
+    border-bottom: 1px solid transparent;
+    color: #5ebeff;
+}
+.dark p a:hover {
+    border-bottom-color: #91d3ff;
+    color: #91d3ff;
+}
