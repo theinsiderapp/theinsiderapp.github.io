@@ -10,15 +10,15 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
     <!-- Google Font -->
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-
-    <link href="css/default.css" rel="stylesheet" type="text/css">
+    <link href='bower_components/bootstrap/dist/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='css/default.css' rel='stylesheet' type='text/css'>
+    <script src="bower_components/modernizr/modernizr.js"></script>
     <title></title>
 </head>
 <body id="home">
@@ -27,23 +27,81 @@
     your browser</a> to improve your experience.</p>
 <![endif]-->
 
+<div id="preload">
+    <img src="images/locks.jpg">
+    <img src="images/bird.jpg">
+    <img src="images/mountain-conversation.jpg">
+</div>
+
 <header>
     <div class="wrap">
         <div id="logo">
-            <a title="GOSSIPS" href="/"><h1>GOSSIPS</h1></a>
+            <a title="The Insider" href="/"><h1>The Insider</h1></a>
         </div>
+    </div>
 </header>
 
-<section class="dark" id="showcase">
-    <div class="overlay"></div>
-    <div class="wrap">
-        <div class="message">
-            <h1>Not your average water cooler converstaion</h1>
+<section id="showcase" class="slide">
+    <div class="wrap"
+         data-center="background-position: 50% 0px;"
+         data-top-bottom="background-position: 50% -100px;"
+         data-anchor-target="#showcase"
+            >
+        <div class="mContainer">
+            <div class="message"
+                 data-center="opacity: 1"
+                 data-106-top="opacity: 0"
+                 data-anchor-target="#showcase h2"
+                    >
+                <h2>Fade out elements before <br>they leave viewport</h2>
+            </div>
         </div>
     </div>
 </section>
+
+<section id="features" class="slide">
+    <div class="wrap"
+         data-center="background-position: 50% 0px;"
+         data-top-bottom="background-position: 50% -100px;"
+         data-anchor-target="#features"
+            >
+        <div class="mContainer">
+            <div class="message"
+                 data-center="opacity: 1"
+                 data-106-top="opacity: 0"
+                 data-anchor-target="#features h2"
+                    >
+                <h2>Fade out elements before <br>they leave viewport</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="story" class="slide">
+    <div class="wrap"
+         data-center="background-position: 50% 0px;"
+         data-top-bottom="background-position: 50% -100px;"
+         data-anchor-target="#story"
+            >
+        <div class="mContainer">
+            <div class="message"
+                 data-center="opacity: 1"
+                 data-106-top="opacity: 0"
+                 data-anchor-target="#story h2"
+                    >
+                <h2>Fade out elements before <br>they leave viewport</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <!-- Plugins JS -->
-<script src="js/jquery-1.1.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/imagesloaded/imagesloaded.js"></script>
+<script src="bower_components/skrollr/dist/skrollr.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/default.js"></script>
 </body>
 </html>

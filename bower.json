@@ -15,11 +15,12 @@
     "jquery": "latest",
     "bootstrap": "latest",
     "modernizr": "latest",
-    "skrollr": "latest"
+    "skrollr": "latest",
+     "imagesloaded":"latest"
   },
   "private": true,
   "authors": [
-    "Ashish Vaid <ashish.vaid@soa.com>"
+    "Ashish Vaid <ashish@theinsider.cc>"
   ],
   "license": "MIT",
   "homepage": "index.html"
