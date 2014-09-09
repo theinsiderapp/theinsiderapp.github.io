@@ -16,7 +16,7 @@
 }
 
 .slide {
-
+   height: 100%;
 }
 
 .mContainer {
@@ -49,7 +49,7 @@
 }
 
 #showcase .wrap {
-    background-image: url('../images/mountain-conversation.jpg')
+    background-image: url('../images/locks.jpg')
 }
 
 #story .wrap {
