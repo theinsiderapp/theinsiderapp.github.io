@@ -17,6 +17,7 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
     <!-- Bootstrap Core CSS -->
     <link href='bower_components/bootstrap/dist/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='bower_components/fullpage.js/jquery.fullPage.css' rel='stylesheet' type='text/css'>
     <link href='css/default.css' rel='stylesheet' type='text/css'>
 
     <title>the Insider</title>
@@ -94,12 +95,26 @@
 
 
 <!-- Plugins JS -->
+<script src="bower_components/requirejs/require.js"></script>
+<script>
+    requirejs.config({
+        baseUrl: "",
+        paths: {
+            jquery:'bower_components/jquery/dist/jquery.min.js',
+            bootstrap:'bower_components/bootstrap/dist/js/bootstrap.min.js',
+            easing: 'bower_components/jquery.easing/js/jquery.easing.min.js',
+            slimscroll: 'bower_components/jquery.slimscroll/jquery.slimscroll.min.js',
+            imagesloaded: 'bower_components/imagesloaded/imagesloaded.js',
+            modernizr: 'bower_components/modernizr/modernizr.js',
+            fullpage: 'bower_components/fullpage.js/jquery.fullPage.min.js'
+        },
+        shim: {
+            bootstrap: ['jquery']
+        }
 
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/imagesloaded/imagesloaded.js"></script>
-<script src="bower_components/modernizr/modernizr.js"></script>
-<script src="bower_components/skrollr/dist/skrollr.min.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="js/default.js"></script>
+    })
+    require(['js/default'])
+
+</script>
 </body>
 </html>

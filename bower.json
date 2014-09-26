@@ -1,30 +1,33 @@
 {
-    "name": "theinsider-web",
-    "version": "1.0.0",
-    "main": "css/default.css",
-    "ignore": [
-        ".jshintrc",
-        "**/*.txt",
-        "**/*.log",
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests"
-    ],
-    "dependencies": {
-        "jquery": "latest",
-        "bootstrap": "latest",
-        "modernizr": "latest",
-        "fullpage.js": "latest",
-        "jquery.easing": "latest",
-        "imagesloaded": "latest",
-        "requirejs": "latest"
-    },
-    "private": true,
-    "authors": [
-        "Ashish Vaid <ashish@theinsider.cc>"
-    ],
-    "license": "MIT",
-    "homepage": "index.html"
+  "name": "theinsider-web",
+  "version": "1.0.0",
+  "main": "css/default.css",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt",
+    "**/*.log",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "latest",
+    "bootstrap": "latest",
+    "modernizr": "latest",
+    "fullpage.js": "latest",
+    "jquery.easing": "latest",
+    "imagesloaded": "latest",
+    "requirejs": "~2.1.15"
+  },
+  "private": true,
+  "authors": [
+    "Ashish Vaid <ashish@theinsider.cc>"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "devDependencies": {
+    "requirejs": "~2.1.15"
+  }
 }
