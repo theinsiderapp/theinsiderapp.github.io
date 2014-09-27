@@ -52,25 +52,27 @@
 }
 
 
-/* Backgrounds will cover all the section
-	* --------------------------------------- */
-#section0,
-#section1,
-#section2{
+
+.section{
+    text-align:center;
+}
+
+
+#home{
+    background-image: url('../images/bird.jpg');
     background-size: cover;
 }
 
 /* Defining each section background and styles
 * --------------------------------------- */
 #section0{
-    background-image: url('../images/bird.jpg');
-    padding: 30% 0 0 0;
+    padding: 10% 0 0 0;
 }
+
 #section1{
-    background-color: ghostwhite;
-    padding: 6% 0 0 0;
+    padding: 10% 0 0 0;
 }
 #section2{
-    background-image: url("../images/locks.jpg");
-    padding: 6% 0 0 0;
+
+    padding: 10% 0 0 0;
 }
