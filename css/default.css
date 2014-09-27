@@ -15,43 +15,62 @@
     width: 100%;
 }
 
-.slide {
-
-}
-
-.mContainer {
-    display: table;
-    table-layout: fixed;
+#header, #footer{
+    position:fixed;
+    height: 100px;
+    display:block;
     width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    opacity: 0;
+    background: rgba(88, 88, 88, 0.1);
+    z-index:9;
+    text-align:center;
+    padding: 0 0 0 0;
 }
 
-.message {
-    max-width: 450px;
-    margin: -150px auto 0 auto;
-    display: table-cell;
-    vertical-align: middle;
-    color: #ebebeb;
-    padding: 0 8%;
-    text-align: center
+#header{
+    top:0px;
+}
+#logo{
+    float:left;
+    margin-left: 20px;
+}
+#the_logo{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #ffffff;
 }
 
-.wrap {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+#insider_logo{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 70px;
+    color: black;
+}
+
+#footer{
+    bottom:0px;
+}
+
+
+/* Backgrounds will cover all the section
+	* --------------------------------------- */
+#section0,
+#section1,
+#section2{
     background-size: cover;
-    height: 100%;
-    width: 100%;
 }
 
-#showcase .wrap {
-    background-image: url('../images/locks.jpg')
+/* Defining each section background and styles
+* --------------------------------------- */
+#section0{
+    background-image: url('../images/bird.jpg');
+    padding: 30% 0 0 0;
 }
-
-#story .wrap {
-    background-image: url('../images/bird.jpg')
+#section1{
+    background-color: ghostwhite;
+    padding: 6% 0 0 0;
+}
+#section2{
+    background-image: url("../images/locks.jpg");
+    padding: 6% 0 0 0;
 }

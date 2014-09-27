@@ -14,7 +14,7 @@
 
     <!-- Google Font -->
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:700italic' rel='stylesheet' type='text/css'>
     <!-- Bootstrap Core CSS -->
     <link href='bower_components/bootstrap/dist/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
     <link href='bower_components/fullpage.js/jquery.fullPage.css' rel='stylesheet' type='text/css'>
@@ -33,85 +33,55 @@
     <img src="images/bird.jpg">
 </div>
 
-<header>
-    <div id="logo">
-        <a title="The Insider" href="/"><h1>The Insider</h1></a>
-    </div>
-</header>
 
-<section id="showcase" class="slide">
-    <div class="wrap"
-         data-center="background-position: 50% 0px;"
-         data-top-bottom="background-position: 50% -100px;"
-         data-anchor-target="#showcase"
-            >
-        <div class="mContainer">
-            <div class="message"
-                 data-center="opacity: 1"
-                 data-106-top="opacity: 0"
-                 data-anchor-target="#showcase h2"
-                    >
-                <h2>Fade out elements before <br>they leave viewport</h2>
-            </div>
+<div id="header">
+    <div id="logo"><span id="the_logo">the</span><span id="insider_logo">Insider</span></div>
+</div>
+
+<div id="content">
+    <div id="section0" class="section">
+        <div class="intro">
+
+            <h2>Fade out elements before <br>they leave viewport</h2>
+
         </div>
     </div>
-</section>
 
-<section id="features" class="slide" style="height: 200px">
-    <div class="wrap"
-         data-center="background-position: 50% 0px;"
-         data-top-bottom="background-position: 50% -100px;"
-         data-anchor-target="#features"
-            >
-        <div class="mContainer">
-            <div class="message"
-                 data-center="opacity: 1"
-                 data-106-top="opacity: 0"
-                 data-anchor-target="#features h2"
-                    >
-                <h2>Fade out elements before <br>they leave viewport</h2>
-            </div>
+    <div id="section1" class="section">
+        <div class="intro">
+
+            <h2>Fade out elements before <br>they leave viewport</h2>
+
         </div>
     </div>
-</section>
 
-<section id="story" class="slide">
-    <div class="wrap"
-         data-center="background-position: 50% 0px;"
-         data-top-bottom="background-position: 50% -100px;"
-         data-anchor-target="#story"
-            >
-        <div class="mContainer">
-            <div class="message"
-                 data-center="opacity: 1"
-                 data-106-top="opacity: 0"
-                 data-anchor-target="#story h2"
-                    >
-                <h2>Fade out elements before <br>they leave viewport</h2>
-            </div>
+    <div id="section2" class="section">
+        <div class="intro">
+            <h2>Fade out elements before <br>they leave viewport</h2>
+
         </div>
     </div>
-</section>
-
+</div>
 
 <!-- Plugins JS -->
 <script src="bower_components/requirejs/require.js"></script>
 <script>
     requirejs.config({
-        baseUrl: "",
+        baseUrl: "./",
         paths: {
-            jquery:'bower_components/jquery/dist/jquery.min.js',
-            bootstrap:'bower_components/bootstrap/dist/js/bootstrap.min.js',
-            easing: 'bower_components/jquery.easing/js/jquery.easing.min.js',
-            slimscroll: 'bower_components/jquery.slimscroll/jquery.slimscroll.min.js',
-            imagesloaded: 'bower_components/imagesloaded/imagesloaded.js',
-            modernizr: 'bower_components/modernizr/modernizr.js',
-            fullpage: 'bower_components/fullpage.js/jquery.fullPage.min.js'
+            jquery: 'bower_components/jquery/dist/jquery.min',
+            bootstrap: 'bower_components/bootstrap/dist/js/bootstrap.min',
+            easing: 'bower_components/jquery.easing/js/jquery.easing.min',
+            slimscroll: 'bower_components/jquery.slimscroll/jquery.slimscroll.min',
+            imagesloaded: 'bower_components/imagesloaded/imagesloaded',
+            modernizr: 'bower_components/modernizr/modernizr',
+            fullpage: 'bower_components/fullpage.js/jquery.fullPage.min',
+            eventEmitter: 'bower_components/eventEmitter',
+            eventie: 'bower_components/eventie'
         },
         shim: {
             bootstrap: ['jquery']
         }
-
     })
     require(['js/default'])
 
