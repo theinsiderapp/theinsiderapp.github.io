@@ -6,7 +6,7 @@ define(['jquery', 'bootstrap', 'fullpage', 'imagesloaded', 'easing'], function($
 
     $(document).ready(function() {
         $('#content').fullpage({
-            verticalCentered: false,
+            verticalCentered: true,
             easing: 'easeOutBack',
             navigation: true,
             navigationPosition: 'right',
