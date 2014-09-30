@@ -1,3 +1,121 @@
+@keyframes floating {
+    from {
+        transform: translate(0, 0px);
+        opacity: 1;
+    }
+    65% {
+        transform: translate(0, 15px);
+        opacity: 0.5;
+    }
+    to {
+        transform: translate(0, 0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+.fadeInDown {
+    animation-name: fadeInDown;
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+.fadeInLeft {
+    animation-name: fadeInLeft;
+}
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+.fadeInRight {
+    animation-name: fadeInRight;
+}
+@keyframes fadeOutLeft {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+.fadeOutLeft {
+    animation-name: fadeOutLeft;
+}
+@keyframes fadeOutRight {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+}
+.fadeOutRight {
+    animation-name: fadeOutRight;
+}
+@keyframes fadeOutDown {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+}
+.fadeOutDown {
+    animation-name: fadeOutDown;
+}
+@keyframes fadeOutUp {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+}
+.fadeOutUp {
+    animation-name: fadeOutUp;
+}
+
+
+
 #preload {
     width: 1px;
     height: 1px;
@@ -7,62 +125,64 @@
     left: 0;
 }
 
-html, body{
+html, body {
     min-width: 300px;
     min-height: 600px;
 }
 
-#header, #footer{
-    position:fixed;
+#header, #footer {
+    position: fixed;
     height: 100px;
-    display:block;
+    display: block;
     width: 100%;
     background: rgba(88, 88, 88, 0.1);
-    z-index:9;
-    text-align:center;
+    z-index: 9;
+    text-align: center;
     padding: 0 0 0 0;
 }
 
-#header{
-    top:0px;
+#header {
+    top: 0px;
 }
-#logo{
-    float:left;
+
+#logo {
+    float: left;
     margin-left: 20px;
 }
-#the_logo{
+
+#the_logo {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 40px;
     color: #ffffff;
 }
 
-#insider_logo{
+#insider_logo {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 70px;
     color: black;
 }
 
-#footer{
-    bottom:0px;
+#footer {
+    bottom: 0px;
 }
 
-
-.intro{
+.intro {
     background: rgba(88, 88, 88, 0.1);
     padding: 40px 40px 40px 40px;
+    border-top: 1px ghostwhite solid;
+    border-bottom: 1px darkgray solid;
 }
 
-.section{
-    text-align:center;
+.section {
+    text-align: center;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
 
-
-#home{
+#home {
     background-image: url('../images/bird.jpg');
     background-size: cover;
     transition: opacity 1s ease-in-out 0s;
@@ -70,13 +190,33 @@ html, body{
 
 /* Defining each section background and styles
 * --------------------------------------- */
-#section0{
+#section0 {
 
 }
 
-#section1{
+#section1 {
 
 }
-#section2{
 
+#section2 {
+
+}
+
+body .section#section0 .center_absolute_position {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+}
+body .section#section0 a.gotoSection {
+    display: block;
+    cursor: pointer;
+    bottom: 30px;
+    position: relative;
+    left: -50%;
+    color: #ffffff;
+    font-size: 25px;
+    animation-name: floating;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
