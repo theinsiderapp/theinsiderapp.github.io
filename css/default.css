@@ -23,9 +23,11 @@
         transform: none;
     }
 }
+
 .fadeInDown {
     animation-name: fadeInDown;
 }
+
 @keyframes fadeInUp {
     0% {
         opacity: 0;
@@ -36,9 +38,11 @@
         transform: none;
     }
 }
+
 .fadeInUp {
     animation-name: fadeInUp;
 }
+
 @keyframes fadeInLeft {
     0% {
         opacity: 0;
@@ -49,9 +53,11 @@
         transform: none;
     }
 }
+
 .fadeInLeft {
     animation-name: fadeInLeft;
 }
+
 @keyframes fadeInRight {
     0% {
         opacity: 0;
@@ -62,9 +68,11 @@
         transform: none;
     }
 }
+
 .fadeInRight {
     animation-name: fadeInRight;
 }
+
 @keyframes fadeOutLeft {
     0% {
         opacity: 1;
@@ -74,9 +82,11 @@
         transform: translate3d(-100%, 0, 0);
     }
 }
+
 .fadeOutLeft {
     animation-name: fadeOutLeft;
 }
+
 @keyframes fadeOutRight {
     0% {
         opacity: 1;
@@ -86,9 +96,11 @@
         transform: translate3d(100%, 0, 0);
     }
 }
+
 .fadeOutRight {
     animation-name: fadeOutRight;
 }
+
 @keyframes fadeOutDown {
     0% {
         opacity: 1;
@@ -98,9 +110,11 @@
         transform: translate3d(0, 100%, 0);
     }
 }
+
 .fadeOutDown {
     animation-name: fadeOutDown;
 }
+
 @keyframes fadeOutUp {
     0% {
         opacity: 1;
@@ -110,11 +124,10 @@
         transform: translate3d(0, -100%, 0);
     }
 }
+
 .fadeOutUp {
     animation-name: fadeOutUp;
 }
-
-
 
 #preload {
     width: 1px;
@@ -153,14 +166,16 @@ html, body {
 
 #the_logo {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-style: italic;
+    font-weight: 700;
     font-size: 40px;
     color: #ffffff;
 }
 
 #insider_logo {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-style: italic;
+    font-weight: 700;
     font-size: 70px;
     color: black;
 }
@@ -174,6 +189,7 @@ html, body {
     padding: 40px 40px 40px 40px;
     border-top: 1px ghostwhite solid;
     border-bottom: 1px darkgray solid;
+
 }
 
 .section {
@@ -208,6 +224,7 @@ body .section#section0 .center_absolute_position {
     left: 50%;
     bottom: 30px;
 }
+
 body .section#section0 a.gotoSection {
     display: block;
     cursor: pointer;
@@ -220,4 +237,20 @@ body .section#section0 a.gotoSection {
     animation-duration: 2.5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+}
+
+
+/** Browser specific fixes **/
+
+body {
+    -webkit-animation-delay: 0.1s;
+    -webkit-animation-name: fontfix;
+    -webkit-animation-duration: 0.1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes fontfix {
+    from { opacity: 1; }
+    to   { opacity: 1; }
 }
