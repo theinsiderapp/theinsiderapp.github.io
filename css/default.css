@@ -239,6 +239,16 @@ body .section#section0 a.gotoSection {
     animation-timing-function: ease-in-out;
 }
 
+/**    MailChimp CSS **/
+#mc_embed_signup {
+
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+}
+.form-control:focus {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(88, 88, 88, 0.6);
+    outline: 0 none;
+}
 
 /** Browser specific fixes **/
 
@@ -251,6 +261,10 @@ body {
 }
 
 @-webkit-keyframes fontfix {
-    from { opacity: 1; }
-    to   { opacity: 1; }
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
 }
