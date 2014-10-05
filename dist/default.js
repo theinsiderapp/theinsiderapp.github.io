@@ -12,7 +12,7 @@ requirejs.config({
         imagesloaded: "imagesloaded",
         modernizr: "modernizr",
         fullpage: "jquery.fullPage.min",
-        eventEmitter: "eventEmitter.min",
+        eventEmitter: "EventEmitter",
         eventie: "eventie",
         requirejs: "require",
         "jquery.easing": "jquery.easing.min"

@@ -1,1 +1,0 @@
-define(["require","bootstrap","jquery"],function(){console.log("Hi! Require is working!")});

@@ -99,29 +99,6 @@
 </div>
 
 <!-- Plugins JS -->
-<script src="bower_components/requirejs/require.js"></script>
-<script>
-    requirejs.config({
-        baseUrl: "./",
-        paths: {
-            jquery: 'bower_components/jquery/dist/jquery.min',
-            bootstrap: 'bower_components/bootstrap/dist/js/bootstrap.min',
-            easing: 'bower_components/jquery.easing/js/jquery.easing.min',
-            slimscroll: 'bower_components/jquery.slimscroll/jquery.slimscroll.min',
-            imagesloaded: 'bower_components/imagesloaded/imagesloaded',
-            modernizr: 'bower_components/modernizr/modernizr',
-            fullpage: 'bower_components/fullpage.js/jquery.fullPage.min',
-            eventEmitter: 'bower_components/eventEmitter',
-            eventie: 'bower_components/eventie'
-        },
-        shim: {
-            bootstrap: ['jquery'],
-            fullpage: ['jquery'],
-            easing: ['jquery']
-        }
-    })
-    require(['js/default'])
-
-</script>
+<script src="dist/require.js" data-main="dist/default.js"></script>
 </body>
 </html>
