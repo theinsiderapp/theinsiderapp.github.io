@@ -21,7 +21,7 @@
     <link href='dist/jquery.fullPage.css' rel='stylesheet' type='text/css'>
     <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
     <link href='css/default.css' rel='stylesheet' type='text/css'>
-
+    <script src="dist/prefixfree.min.js"></script>
     <title>the Insider</title>
 </head>
 <body id="home">
@@ -30,9 +30,6 @@
     your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<div id="preload">
-    <img src="images/bird.jpg">
-</div>
 
 
 <div id="header">
@@ -40,7 +37,7 @@
 </div>
 
 <div id="content">
-    <div id="section0" class="row section">
+    <div id="section0" class="row section" data-anchor="page1">
         <div class="intro">
             <h3>Share Anonymously</h3>
 
@@ -56,7 +53,7 @@
         </div>
     </div>
 
-    <div id="section1" class="row section">
+    <div id="section1" class="row section" data-anchor="page2">
         <div class="intro">
             <h3>Heading 2</h3>
 
@@ -64,7 +61,7 @@
         </div>
     </div>
 
-    <div id="section2" class="row section">
+    <div id="section2" class="row section" data-anchor="page3">
         <div class="intro">
             <h3>Notify me when available</h3>
 
@@ -110,5 +107,10 @@
 </div>
 <!-- Plugins JS -->
 <script src="dist/require.js" data-main="dist/default.js"></script>
+
+<div id="preload">
+    <img src="images/bird.jpg">
+</div>
+
 </body>
 </html>

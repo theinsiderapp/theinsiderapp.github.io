@@ -35,12 +35,16 @@ requirejs.config({
 
 define(['jquery', 'bootstrap', 'fullpage', 'imagesloaded', 'jquery.easing'], function ($) {
     $(document).ready(function () {
+        $('#preload').imagesLoaded( function() {
+            // images have loaded
+        });
+
         $('#content').fullpage({
             verticalCentered: true,
             easing: 'easeOutBack',
             navigation: true,
             navigationPosition: 'right',
-            css3: true
+            css3: false
         });
 
 

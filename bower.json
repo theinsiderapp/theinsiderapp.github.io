@@ -19,7 +19,9 @@
     "fullpage.js": "latest",
     "jquery.easing": "latest",
     "imagesloaded": "latest",
-    "requirejs": "~2.1.15"
+    "requirejs": "~2.1.15",
+     "prefixfree":"latest"
+
   },
   "private": true,
   "authors": [
