@@ -217,7 +217,7 @@ html, body {
 }
 
 #home {
-    background-image: url('../images/bird.jpg');
+    background-image: url('../images/birdx1800.png');
     background-size: cover;
     transition: opacity 1s ease-in-out 0s;
 }
