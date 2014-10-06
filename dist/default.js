@@ -40,6 +40,7 @@ define(['jquery', 'bootstrap', 'fullpage', 'imagesloaded', 'jquery.easing'], fun
         });
 
         $('#content').fullpage({
+            anchors: ['page1', 'page2', 'page3'],
             verticalCentered: true,
             easing: 'easeOutBack',
             navigation: true,
