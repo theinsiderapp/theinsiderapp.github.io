@@ -24,7 +24,7 @@ requirejs.config({
         fullpage: [
             "jquery"
         ],
-        easing: [
+        "jquery.easing": [
             "jquery"
         ]
     },
