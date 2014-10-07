@@ -40,12 +40,14 @@ define(['jquery', 'bootstrap', 'fullpage', 'imagesloaded', 'jquery.easing'], fun
         });
 
         $('#content').fullpage({
-            anchors: ['page1', 'page2', 'page3'],
+            anchors: ['introduction', 'value', 'join'],
+            slidesColor: ['#f1f1f1', '#f1f1f1', '#f1f1f1'],
             verticalCentered: true,
             easing: 'easeOutBack',
             navigation: true,
             navigationPosition: 'right',
-            css3: false
+            css3: false,
+            keyboardScrolling: true
         });
 
 

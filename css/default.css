@@ -202,11 +202,29 @@ html, body {
 }
 
 .intro {
-    background: rgba(88, 88, 88, 0.1);
+    background: rgba(88, 88, 88, 0.8);
     padding: 40px 40px 40px 40px;
-    border-top: 1px ghostwhite solid;
-    border-bottom: 1px darkgray solid;
+    border-top: 1px #f8f8ff solid;
+    border-bottom: 1px #888888 solid;
+    color: #fff;
+    margin-top: 10px;
+    clear: both;
+}
 
+.intro50{
+    background: rgba(88, 88, 88, 0.8);
+    padding: 20px 20px 20px 20px;
+    border-top: 1px #f8f8ff solid;
+    border-bottom: 1px #888888 solid;
+    color: #fff;
+    margin-top: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.image-bullet{
+    float:left;
+    width:75px;
 }
 
 .section {
@@ -263,7 +281,7 @@ body .section#section0 a.gotoSection {
 }
 
 #mc_embed_signup .mc-field-group input {
-    width: 50%;
+    //width: 50%;
 }
 
 .form-control:focus {
