@@ -207,7 +207,7 @@ html, body {
     border-top: 1px #f8f8ff solid;
     border-bottom: 1px #888888 solid;
     color: #fff;
-    margin-top: 10px;
+    margin-top: 2px;
     clear: both;
 }
 
@@ -217,9 +217,7 @@ html, body {
     border-top: 1px #f8f8ff solid;
     border-bottom: 1px #888888 solid;
     color: #fff;
-    margin-top: 5px;
-    width: 100%;
-    height: auto;
+    margin-top: 2px;
 }
 
 .image-bullet{
