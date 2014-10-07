@@ -201,6 +201,30 @@ html, body {
     margin-top:7px;
 }
 
+.title {
+    //font-family: 'Josefin Sans';
+    font-family: 'Oleo Script';
+    font-size: 35px;
+    //color: #f1f1f1;
+    //color: #F1A9A0;
+
+}
+
+.lead{
+    font-family: 'Lato';
+    color: #f1f1f1;
+    font-size: 22px;
+}
+
+.lead .highlight{
+    color: #F1A9A0;
+}
+
+
+#h3,.h3{
+    font-family: 'Lato';
+}
+
 .intro {
     background: rgba(88, 88, 88, 0.8);
     padding: 40px 40px 40px 40px;
@@ -264,8 +288,9 @@ body .section#section0 a.gotoSection {
     bottom: 30px;
     position: relative;
     left: -50%;
-    color: #ffffff;
-    font-size: 25px;
+    color: #F64747;
+    font-size: 30px;
+    font-weight: normal;
     animation-name: floating;
     animation-duration: 2.5s;
     animation-iteration-count: infinite;
