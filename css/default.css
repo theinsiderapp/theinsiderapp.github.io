@@ -195,33 +195,32 @@ html, body {
     bottom: 0px;
 }
 
-.mixpanel{
+.mixpanel {
     float: right;
     margin-right: 10px;
-    margin-top:7px;
+    margin-top: 7px;
 }
 
 .title {
-    //font-family: 'Josefin Sans';
+/ / font-family : 'Josefin Sans';
     font-family: 'Oleo Script';
     font-size: 35px;
-    //color: #f1f1f1;
-    //color: #F1A9A0;
+/ / color : #f1f1f1;
+/ / color : #F1A9A0;
 
 }
 
-.lead{
+.lead {
     font-family: 'Lato';
     color: #f1f1f1;
     font-size: 22px;
 }
 
-.lead .highlight{
-    color: #F1A9A0;
+.lead .highlight {
+    color: #f1a9a0;
 }
 
-
-#h3,.h3{
+#h3, .h3 {
     font-family: 'Lato';
 }
 
@@ -230,23 +229,29 @@ html, body {
     padding: 40px 40px 40px 40px;
     border-top: 1px #f8f8ff solid;
     border-bottom: 1px #888888 solid;
-    color: #fff;
+    color: #ffffff;
     margin-top: 2px;
     clear: both;
 }
 
-.intro50{
+.intro50 {
     background: rgba(88, 88, 88, 0.8);
     padding: 20px 20px 20px 20px;
     border-top: 1px #f8f8ff solid;
     border-bottom: 1px #888888 solid;
-    color: #fff;
+    color: #ffffff;
     margin-top: 2px;
 }
 
-.image-bullet{
-    float:left;
-    width:75px;
+.image-bullet {
+    float: left;
+    width: 75px;
+}
+
+.round-images {
+    height: 75px;
+    width: 75px;
+    border: 0px;
 }
 
 .section {
@@ -256,10 +261,51 @@ html, body {
     margin-right: auto;
 }
 
+.phone {
+    border: 0;
+    height: 500px;
+}
+
 #home {
     background-image: url('../images/birdx1800.png');
     background-size: cover;
     transition: opacity 1s ease-in-out 0s;
+}
+
+/** Mobile experience **/
+@media (max-width: 480px) {
+
+    .title {
+        font-size: 20px;
+    }
+
+    .lead {
+        font-size: 14px;
+    }
+
+    .intro {
+        padding: 20px;
+    }
+
+    .intro50 {
+        padding: 10px;
+    }
+
+    .image-bullet {
+        width: 40px;
+    }
+
+    .round-images {
+        height: 40px;
+        width: 40px;
+
+    }
+
+    .phone {
+        height: 200px;
+        margin-top: 5px;
+    }
+
 }
 
 /* Defining each section background and styles
@@ -288,7 +334,7 @@ body .section#section0 a.gotoSection {
     bottom: 30px;
     position: relative;
     left: -50%;
-    color: #F64747;
+    color: #f64747;
     font-size: 30px;
     font-weight: normal;
     animation-name: floating;
@@ -300,13 +346,12 @@ body .section#section0 a.gotoSection {
 /** Override fullPage css **/
 
 #fp-nav span, .fp-slidesNav span {
-    border: 1px solid #F64747;
+    border: 1px solid #f64747;
 }
 
 #fp-nav li .active span, .fp-slidesNav .active span {
-    background: none repeat scroll 0 0 #F64747;
+    background: none repeat scroll 0 0 #f64747;
 }
-
 
 /**    MailChimp CSS **/
 #mc_embed_signup {
@@ -315,7 +360,7 @@ body .section#section0 a.gotoSection {
 }
 
 #mc_embed_signup .mc-field-group input {
-    //width: 50%;
+/ / width : 50 %;
 }
 
 .form-control:focus {
