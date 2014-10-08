@@ -37,6 +37,8 @@ requirejs.config({
 define(['jquery', 'bootstrap', 'fullpage', 'imagesloaded', 'jquery.easing'], function ($) {
     $(document).ready(function () {
         $('#preload').imagesLoaded( function() {
+            $('#home').removeClass("no-backdrop-image")
+            $('#home').addClass("backdrop-image")
             // images have loaded
         });
 

@@ -266,10 +266,14 @@ html, body {
     height: 500px;
 }
 
-#home {
+.backdrop-image {
     background-image: url('../images/birdx1800.png');
     background-size: cover;
     transition: opacity 1s ease-in-out 0s;
+}
+
+.no-backdrop-image {
+    background-color: #f1f1f1;
 }
 
 /** Mobile experience **/
