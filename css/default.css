@@ -297,6 +297,17 @@ body .section#section0 a.gotoSection {
     animation-timing-function: ease-in-out;
 }
 
+/** Override fullPage css **/
+
+#fp-nav span, .fp-slidesNav span {
+    border: 1px solid #F64747;
+}
+
+#fp-nav li .active span, .fp-slidesNav .active span {
+    background: none repeat scroll 0 0 #F64747;
+}
+
+
 /**    MailChimp CSS **/
 #mc_embed_signup {
     clear: left;

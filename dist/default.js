@@ -22,7 +22,8 @@ requirejs.config({
             "jquery"
         ],
         fullpage: [
-            "jquery"
+            "jquery",
+            "slimscroll"
         ],
         "jquery.easing": [
             "jquery"
@@ -47,7 +48,10 @@ define(['jquery', 'bootstrap', 'fullpage', 'imagesloaded', 'jquery.easing'], fun
             navigation: true,
             navigationPosition: 'right',
             css3: false,
-            keyboardScrolling: true
+            keyboardScrolling: true,
+            paddingTop:'105px',
+            paddingBottom: '55px',
+            scrollOverflow: true
         });
 
 
