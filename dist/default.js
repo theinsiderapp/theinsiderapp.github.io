@@ -52,7 +52,7 @@ define(['jquery', 'bootstrap', 'fullpage', 'imagesloaded', 'jquery.easing'], fun
             css3: false,
             keyboardScrolling: true,
             scrollOverflow: false,
-            autoScrolling: false
+            autoScrolling: true
         });
 
 
