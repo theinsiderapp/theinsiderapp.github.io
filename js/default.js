@@ -12,7 +12,7 @@ requirejs.config({
         imagesloaded: "imagesloaded",
         modernizr: "modernizr",
         fullpage: "jquery.fullPage.min",
-        eventEmitter: "eventEmitter.min",
+        eventEmitter: "EventEmitter",
         eventie: "eventie",
         requirejs: "require",
         "jquery.easing": "jquery.easing.min"
@@ -22,9 +22,10 @@ requirejs.config({
             "jquery"
         ],
         fullpage: [
-            "jquery"
+            "jquery",
+            "slimscroll"
         ],
-        easing: [
+        "jquery.easing": [
             "jquery"
         ]
     },
@@ -35,12 +36,23 @@ requirejs.config({
 
 define(['jquery', 'bootstrap', 'fullpage', 'imagesloaded', 'jquery.easing'], function ($) {
     $(document).ready(function () {
+        $('#preload').imagesLoaded( function() {
+            $('#home').removeClass("no-backdrop-image")
+            $('#home').addClass("backdrop-image")
+            // images have loaded
+        });
+
         $('#content').fullpage({
+            anchors: ['introduction', 'value', 'join'],
+            slidesColor: ['#f1f1f1', '#f1f1f1', '#f1f1f1'],
             verticalCentered: true,
             easing: 'easeOutBack',
             navigation: true,
             navigationPosition: 'right',
-            css3: true
+            css3: false,
+            keyboardScrolling: true,
+            scrollOverflow: false,
+            autoScrolling: false
         });
 
 

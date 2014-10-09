@@ -51,7 +51,8 @@ define(['jquery', 'bootstrap', 'fullpage', 'imagesloaded', 'jquery.easing'], fun
             navigationPosition: 'right',
             css3: false,
             keyboardScrolling: true,
-            scrollOverflow: false
+            scrollOverflow: false,
+            autoScrolling: false
         });
 
 
