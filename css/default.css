@@ -152,9 +152,6 @@ html, body {
     z-index: 9;
     text-align: center;
     padding: 0 0 0 0;
-}
-
-#header {
     top: 0px;
     border-bottom: 1px darkgray solid;
 }
@@ -189,11 +186,9 @@ html, body {
     z-index: 9;
     text-align: center;
     padding: 0 0 0 0;
-}
-
-#footer {
     bottom: 0px;
 }
+
 
 .mixpanel {
     float: right;
@@ -202,18 +197,15 @@ html, body {
 }
 
 .title {
-/ / font-family : 'Josefin Sans';
     font-family: 'Oleo Script';
     font-size: 35px;
-/ / color : #f1f1f1;
-/ / color : #F1A9A0;
-
 }
 
 .lead {
     font-family: 'Lato';
     color: #f1f1f1;
     font-size: 22px;
+    margin-bottom: 0px;
 }
 
 .lead .highlight {
@@ -281,6 +273,22 @@ html, body {
 /** Mobile experience **/
 @media (max-width: 480px) {
 
+    #header{
+        height: 50px;
+    }
+
+    #footer{
+       height: 25px;
+    }
+
+    #the_logo{
+      font-size: 20px;
+    }
+
+    #insider_logo{
+      font-size: 35px;
+    }
+
     .title {
         font-size: 20px;
     }
@@ -312,7 +320,49 @@ html, body {
         margin-top: 5px;
     }
 
+    .mixpanel{
+        display: none;
+
+    }
 }
+
+/** Tablet experience **/
+@media (min-width: 480px) and (max-width: 900px) {
+
+    .title {
+        font-size: 22px;
+    }
+
+    .lead {
+        font-size: 16px;
+    }
+
+    .intro {
+        padding: 15px;
+    }
+
+    .intro50 {
+        padding: 10px;
+        min-height: 70px;
+    }
+
+    .image-bullet {
+        width: 50px;
+    }
+
+    .round-images {
+        height: 50px;
+        width: 50px;
+
+    }
+
+    .phone {
+        height: 350px;
+        margin-top: 5px;
+    }
+
+}
+
 
 /* Defining each section background and styles
 * --------------------------------------- */
