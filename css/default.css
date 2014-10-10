@@ -233,6 +233,7 @@ html, body {
     border-bottom: 1px #888888 solid;
     color: #ffffff;
     margin-top: 2px;
+    min-height: 100px;
 }
 
 .image-bullet {
@@ -268,99 +269,6 @@ html, body {
 .no-backdrop-image {
     opacity: 0;
     background-color: #f1f1f1;
-}
-
-/** Mobile experience **/
-@media (max-width: 480px) {
-
-    #header{
-        height: 50px;
-    }
-
-    #footer{
-       height: 25px;
-    }
-
-    #the_logo{
-      font-size: 20px;
-    }
-
-    #insider_logo{
-      font-size: 35px;
-    }
-
-    .title {
-        font-size: 20px;
-    }
-
-    .lead {
-        font-size: 14px;
-    }
-
-    .intro {
-        padding: 15px;
-    }
-
-    .intro50 {
-        padding: 10px;
-    }
-
-    .image-bullet {
-        width: 40px;
-    }
-
-    .round-images {
-        height: 40px;
-        width: 40px;
-
-    }
-
-    .phone {
-        height: 200px;
-        margin-top: 5px;
-    }
-
-    .mixpanel{
-        display: none;
-
-    }
-}
-
-/** Tablet experience **/
-@media (min-width: 480px) and (max-width: 900px) {
-
-    .title {
-        font-size: 22px;
-    }
-
-    .lead {
-        font-size: 16px;
-    }
-
-    .intro {
-        padding: 15px;
-    }
-
-    .intro50 {
-        padding: 10px;
-        min-height: 70px;
-    }
-
-    .image-bullet {
-        width: 50px;
-    }
-
-    .round-images {
-        height: 50px;
-        width: 50px;
-
-    }
-
-    .phone {
-        height: 350px;
-        margin-top: 5px;
-    }
-
 }
 
 
@@ -399,6 +307,106 @@ body .section#section0 a.gotoSection {
     animation-timing-function: ease-in-out;
 }
 
+/** Mobile experience **/
+@media (max-width: 480px) {
+
+    #header{
+        height: 50px;
+    }
+
+    #footer{
+       height: 25px;
+    }
+
+    #the_logo{
+      font-size: 20px;
+    }
+
+    #insider_logo{
+      font-size: 35px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .lead {
+        font-size: 14px;
+    }
+
+    .intro {
+        padding: 15px;
+    }
+
+    .intro50 {
+        padding: 10px;
+        min-height: 60px;
+    }
+
+    .image-bullet {
+        width: 40px;
+    }
+
+    .round-images {
+        height: 40px;
+        width: 40px;
+
+    }
+
+    .phone {
+        height: 200px;
+        margin-top: 5px;
+    }
+
+    .mixpanel{
+        display: none;
+
+    }
+
+    body .section#section0 .center_absolute_position {
+        bottom: 10px;
+    }
+}
+
+/** Tablet experience **/
+@media (min-width: 480px) and (max-width: 995px) {
+
+    .title {
+        font-size: 22px;
+    }
+
+    .lead {
+        font-size: 16px;
+    }
+
+    .intro {
+        padding: 15px;
+    }
+
+    .intro50 {
+        padding: 10px;
+        min-height: 70px;
+    }
+
+    .image-bullet {
+        width: 50px;
+    }
+
+    .round-images {
+        height: 50px;
+        width: 50px;
+
+    }
+
+    .phone {
+        height: 350px;
+        margin-top: 5px;
+    }
+
+}
+
+
+
 /** Override fullPage css **/
 
 #fp-nav span, .fp-slidesNav span {
@@ -412,12 +420,9 @@ body .section#section0 a.gotoSection {
 /**    MailChimp CSS **/
 #mc_embed_signup {
     clear: left;
-    font: 14px Helvetica, Arial, sans-serif;
+    font: 14px Lato, Helvetica, Arial, sans-serif;
 }
 
-#mc_embed_signup .mc-field-group input {
-/ / width : 50 %;
-}
 
 .form-control:focus {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(88, 88, 88, 0.6);
