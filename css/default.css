@@ -272,6 +272,20 @@ html, body {
 }
 
 
+.footer-links{
+    font-family: 'Lato';
+    color: #f1f1f1;
+    vertical-align: middle;
+    height: 100%;
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+.footer-links:hover{
+    color: #f1a9a0;
+    text-decoration: none;
+}
+
 /* Defining each section background and styles
 * --------------------------------------- */
 #section0 {
@@ -366,6 +380,11 @@ body .section#section0 a.gotoSection {
     body .section#section0 .center_absolute_position {
         bottom: 10px;
     }
+
+    .footer-links{
+        font-size: 10px;
+        margin-left: 10px;
+    }
 }
 
 /** Tablet experience **/
@@ -401,6 +420,12 @@ body .section#section0 a.gotoSection {
     .phone {
         height: 350px;
         margin-top: 5px;
+    }
+
+
+    .footer-links{
+        font-size: 12px;
+        margin-left: 12px;
     }
 
 }
