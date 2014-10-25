@@ -60,5 +60,10 @@ define(['jquery', 'bootstrap', 'fullpage', 'imagesloaded', 'jquery.easing'], fun
             $('#fp-nav li:nth-child(2) a').click();
             return false;
         });
+
+        $('#gotoSection3').click(function () {
+            $('#fp-nav li:nth-child(3) a').click();
+            return false;
+        });
     });
 })

@@ -300,13 +300,13 @@ html, body {
 
 }
 
-body .section#section0 .center_absolute_position {
+body .section .center_absolute_position {
     position: absolute;
     left: 50%;
     bottom: 30px;
 }
 
-body .section#section0 a.gotoSection {
+body .section a.gotoSection {
     display: block;
     cursor: pointer;
     bottom: 30px;
@@ -377,7 +377,7 @@ body .section#section0 a.gotoSection {
 
     }
 
-    body .section#section0 .center_absolute_position {
+    body .section .center_absolute_position {
         bottom: 10px;
     }
 
